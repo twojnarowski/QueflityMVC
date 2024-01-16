@@ -62,7 +62,6 @@ namespace QueflityMVC.Infrastructure.Common
             {
                 _dbContext.Attach(entityToUpdate);
                 _dbContext.Entry(entityToUpdate).State = EntityState.Modified;
-
             }
 
             _dbContext.SaveChanges();

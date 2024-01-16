@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Data;
+using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using QueflityMVC.Application.Common.Pagination;
 using QueflityMVC.Application.Errors.Common;
@@ -7,7 +8,6 @@ using QueflityMVC.Application.ViewModels.Other;
 using QueflityMVC.Application.ViewModels.User;
 using QueflityMVC.Domain.Interfaces;
 using QueflityMVC.Domain.Models;
-using System.Data;
 
 namespace QueflityMVC.Application.Services
 {

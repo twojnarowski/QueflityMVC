@@ -4,7 +4,7 @@ namespace QueflityMVC.Domain.Models
 {
     public class Kit : BaseBuyableEntity
     {
-        public required string Name { get; set; }
+        public string Name { get; set; }
 
         public string? Description { get; set; }
 

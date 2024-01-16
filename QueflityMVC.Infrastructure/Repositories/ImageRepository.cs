@@ -6,6 +6,8 @@ namespace QueflityMVC.Infrastructure.Repositories
 {
     public class ImageRepository : BaseRepository<ItemImage>, IImageRepository
     {
-        public ImageRepository(Context dbContext) : base(dbContext) { }
+        public ImageRepository(Context dbContext) : base(dbContext)
+        {
+        }
     }
 }

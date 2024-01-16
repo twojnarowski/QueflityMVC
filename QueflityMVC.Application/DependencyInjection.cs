@@ -1,10 +1,10 @@
-﻿using FluentValidation;
+﻿using System.Reflection;
+using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 using QueflityMVC.Application.Interfaces;
 using QueflityMVC.Application.Services;
 using QueflityMVC.Application.Validators;
-using System.Reflection;
 
 namespace QueflityMVC.Application
 {

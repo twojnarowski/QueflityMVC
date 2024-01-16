@@ -41,7 +41,6 @@ namespace QueflityMVC.Application.Services
 
             IQueryable<Ingredient> matchingIngredients = _ingredientRepository.GetIngredientsForPagination(listIngredientsVM.ItemId, listIngredientsVM.NameFilter);
 
-
             listIngredientsVM.Pagination = await matchingIngredients.Paginate<Ingredient, IngredientForListVM>(listIngredientsVM.Pagination, _mapper.ConfigurationProvider);
 
             return listIngredientsVM;

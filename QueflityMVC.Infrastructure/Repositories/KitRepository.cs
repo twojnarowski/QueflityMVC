@@ -8,7 +8,9 @@ namespace QueflityMVC.Infrastructure.Repositories
 {
     public class KitRepository : BaseRepository<Kit>, IKitRepository
     {
-        public KitRepository(Context dbContext) : base(dbContext) { }
+        public KitRepository(Context dbContext) : base(dbContext)
+        {
+        }
 
         public IQueryable<int> GetComponenetsIdsForSet(int setId)
         {
@@ -21,7 +23,6 @@ namespace QueflityMVC.Infrastructure.Repositories
             var componentsIds = GetSetComponents(setId).Select(x => x.ItemId);
 
             return componentsIds;
-
         }
 
         public IQueryable<Element> GetSetComponents(int setId)
@@ -126,7 +127,6 @@ namespace QueflityMVC.Infrastructure.Repositories
             {
                 throw new ArgumentNullException(nameof(component));
             }
-
         }
 
         public void DeleteElement(int kitId, int itemId)

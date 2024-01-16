@@ -106,7 +106,6 @@ namespace QueflityMVC.Application.Common.Pagination
             {
                 paginationInfo.PageSize = DEFAULT_PAGE_SIZE;
             }
-
         }
     }
 }
